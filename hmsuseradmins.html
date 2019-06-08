@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADMINISTERING USERS</title>
+<style type="text/css">
+
+formma{
+display:box;
+position:absolute;
+left:300px;
+top:200px;
+background:brown;
+width:400px;
+height:350px;
+border-radius:10px;
+}
+
+tabled{
+position:relative;
+background:orange;
+width:320px;
+left:50px;
+top:100px;
+heigth:200px;
+border-radius:10px;
+}
+
+td{
+font-family:Verdana,Helvetica;
+font-weight:small;
+font-size:10pt;
+}
+
+input[type = "submit"]
+{
+width:200px;
+background:cyan;
+border-radius:10px;
+}
+
+button{
+background:blue;
+width:100px;
+height:50px;
+border-radius:20px;
+}
+
+</style>
+                                        
+                                          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+‪<!-- Optional Bootstrap theme -->
+‪<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+         
+‪<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+<button id = "btn">CLICK TO START</button>
+<script type="text/javascript">
+$(document).ready(function()
+		{
+	    $("form").hide();
+		}
+		)
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+		{
+	    $("#btn").click(function()
+	    		
+	    		{
+	    	    $("form").slideToggle("slow");
+	    	    
+	    		}
+	    		);
+		}
+		
+		);
+</script>
+<form action="hmsuseradmin.php" method ="post" id = "dialog" title = "LOGIN CREDENTIALS">
+<table>
+<tr>
+<td>User Name</td>
+<td align ="left"><input type ="text" name = "usname" size = "30"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td align ="left"><input type ="password" name = "pswd" size = "30"></td>
+</tr>
+<tr>
+<td>Location</td>
+<td align ="left"><input type ="text" name = "loc" size = "30"></td>
+</tr>
+<tr>
+<td>Access Type</td>
+<td align ="left"><input type ="text" name = "sta" size = "20"></td>
+</tr>
+<tr>
+<td>UpLoad</td>
+<td align ="left"><input type ="submit" value = "Update"></td>
+</tr>
+</table>
+</form>
+<script type="text/javascript">
+	$("#dialogd").dialog(
+			{
+				show:"bounce",
+			    hide:"puff",
+			    height:"auto",
+			    width:"530",
+			    position:"center"
+			    
+			    	
+			}
+			
+			);
+	</script>
+</body>
+</html>
